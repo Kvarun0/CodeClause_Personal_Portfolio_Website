@@ -276,6 +276,9 @@ section .topic {
     color: var(--black-color);
 }
 
+.about-details .right h4{
+    margin-top: 15px;
+}
 section .button {
     margin: 16px 0px;
 }
