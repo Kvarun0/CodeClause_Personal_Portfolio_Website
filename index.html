@@ -224,20 +224,23 @@
     <section class="contact" id="contact">
         <div class="title"><span>Getting in touch is easy!</span></div>
         <div class="content">
+
             <div class="form">
-                <div class="form-item">
-                    <span class="item-name">Name</span>
-                    <input type="text" name="" id="" placeholder="Enter Your Name">
-                </div>
-                <div class="form-item">
-                    <span class="item-name">Email</span>
-                    <input type="email" name="" id="" placeholder="Enter Your Email">
-                </div>
-                <div class="form-item">
-                    <span class="item-name">Message</span>
-                    <textarea name="" id="" cols="30" rows="8" placeholder="Enter Your Message"></textarea>
-                </div>
-                <button type="submit" class="btn">Submit</button>
+                <form action="" id="contact-form">
+                    <div class="form-item">
+                        <span class="item-name">Name</span>
+                        <input required type="text" name="" id="name" placeholder="Enter Your Name">
+                    </div>
+                    <div class="form-item">
+                        <span class="item-name">Email</span>
+                        <input required type="email" name="" id="email" placeholder="Enter Your Email">
+                    </div>
+                    <div class="form-item">
+                        <span class="item-name">Message</span>
+                        <textarea required name="" id="msg" cols="30" rows="8" placeholder="Enter Your Message"></textarea>
+                    </div>
+                    <button type="submit" class="btn" id="submit">Submit</button>
+                </form>
             </div>
 
         </div>
@@ -252,9 +255,16 @@
         </div>
     </footer>
 
-
-
     <script src="script.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/8.4.2/firebase.js"></script>
+    
+    <script src="fireconfig.js"></script>
+
+    <script src="form.js"></script>
+
+    
+
 
 </body>
 
@@ -273,3 +283,14 @@
                     <a href="mailto:varunkapadiya03@gmail.com"><i class="fa-sharp fa-solid fa-envelope fa-3x"></i></a>
                 </div>
             </div> -->
+
+<!-- 
+            const firebaseConfig = {
+                apiKey: "AIzaSyBejMo7nc2C3fjdGG-YQ3BTVa_t7_zLIV0",
+                authDomain: "portfolio-website-d7fc5.firebaseapp.com",
+                databaseURL: "https://portfolio-website-d7fc5-default-rtdb.asia-southeast1.firebasedatabase.app",
+                projectId: "portfolio-website-d7fc5",
+                storageBucket: "portfolio-website-d7fc5.appspot.com",
+                messagingSenderId: "759180773974",
+                appId: "1:759180773974:web:e2fbc110e5c01da27249f7"
+              }; -->
