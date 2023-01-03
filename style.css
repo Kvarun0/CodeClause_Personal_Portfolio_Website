@@ -160,27 +160,23 @@ nav .menu-btn {
 }
 
 .home .text-one {
-    font-size: 25px;
+    font-size: 1.6rem;
     color: var(--black-color);
+    margin-bottom: 1rem;
 }
 
 .home .text-two {
-    font-size: 75px;
+    font-size: 3rem;
     color: var(--black-color);
     font-weight: 600;
     margin-left: -3px;
+    margin-bottom: 1rem;
 }
 
 .home .text-three {
     color: var(--primary-color);
-    font-size: 40px;
-    margin: 5px 0;
-}
-
-.home .text-four {
-    color: var(--black-color);
-    font-size: 23px;
-    margin: 5px 0;
+    font-size: 2rem;
+    margin: 1rem 0;
 }
 
 .home .button {
@@ -209,18 +205,18 @@ nav .menu-btn {
 
 /* -------------------------------------------------About Section*/
 section {
-    padding-top: 10px;
+    padding-top: 2rem;
 }
 
 section .title {
     display: flex;
     justify-content: center;
-    margin-bottom: 40px;
+    margin-bottom: 4rem;
 }
 
 section .title span {
     color: var(--black-color);
-    font-size: 30px;
+    font-size: 2.4rem;
     font-weight: 600;
     position: relative;
     padding-bottom: 8px;
@@ -267,13 +263,14 @@ section .content {
 
 section .topic {
     color: var(--black-color);
-    font-size: 25px;
+    font-size: 2rem;
     font-weight: 500;
     margin-bottom: 10px;
 }
 
 .about-details .right p {
     text-align: justify;
+    font-size: 1rem;
     color: var(--black-color);
 }
 
@@ -288,7 +285,7 @@ section .button button {
     outline: none;
     padding: 8px 16px;
     border-radius: 4px;
-    font-size: 25px;
+    font-size: 1.5rem;
     font-weight: 400;
     background: var(--primary-color);
     color: var(--white-color);
@@ -338,6 +335,14 @@ section .button button:hover {
     margin: 0;
 }
 
+/* =========================editing */
+.skills-details .boxes .box-other{
+    width: 100%;
+    background: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+
 
 /* -------------------------------------------------------Projects */
 
@@ -357,6 +362,19 @@ section .button button:hover {
     cursor: default;
     transition: all 0.4s ease;
 }
+
+.projects .box .project-details{
+    padding-top: 1rem;
+    display: flex;
+}
+.projects .project-details h3{
+    flex: auto;
+    font-weight: 500;
+}
+.projects .project-details a{
+    color: #a39a9a;
+}
+
 
 .projects .boxes .box:hover {
     background: var(--primary-color);
@@ -385,6 +403,13 @@ section .button button:hover {
 .projects .boxes .box:hover .p {
     color: var(--white-color);
     transition: all 0.4s ease;
+}
+
+.projects .boxes .box:hover .project-details{
+    color: #f0f8ff;
+} 
+.projects .boxes .box:hover .project-details a{
+    color: var(--black-color);
 }
 
 /* --------------------------------------------------------Contact Me */
@@ -496,6 +521,7 @@ footer .text  a:hover {
         width: 90%;
         margin: 40px 0;
     }
+
 }
 
 @media (max-width:900px) {
@@ -585,16 +611,34 @@ footer .text  a:hover {
 
 
 @media(max-width:500px) {
+
      .home .text-two{
         font-size: 55px;
      }
      .home .text-three{
         font-size: 33px;
      }
-    .skills-details .boxes .per{
+    
+     .skills-details .boxes .per{
         font-size: 30px;
      }
      .skills-details .boxes .topic{
         font-size: 25px;
      }
+    
+     .skills .boxes{
+        display: block;
+     }
+
+     .skills .boxes .box{
+        width: 88%;
+        font-size: 12px;
+        margin: 0 auto;
+        margin-bottom: 1rem;
+     }
+     
+     .contact .content{
+        width: 85%;
+     }
+
 }
